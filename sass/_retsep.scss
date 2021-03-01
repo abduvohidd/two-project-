@@ -1,0 +1,207 @@
+.section-3 {
+  background-image: url(/images/section-3-background-images.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .retsep-text {
+    @include flex(center, center, column);
+
+    h2 {
+      font-size: $font-size-five;
+      font-family: $font-family-first;
+      letter-spacing: normal;
+      list-style: 0.2;
+    }
+    .green-btn {
+      font-family: $font-family-two;
+      font-size: $font-size-firist;
+      background-color: $primery-color;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-radius: 2rem;
+      @extend .button;
+      cursor: pointer;
+    }
+    img {
+      margin-right: 1rem;
+    }
+  }
+  .main {
+    margin: 10rem 0 10rem 15rem;
+  }
+
+  .cook {
+    background-color: $background-color;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 2rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+    h4 {
+      font-size: $font-size-four;
+      font-family: $font-family-two;
+      text-align: center;
+      margin-top: 1rem;
+    }
+  }
+
+  .sec-4-barg {
+    position: absolute;
+    top: -10%;
+    right: 0;
+  }
+  .meal {
+    position: absolute;
+    bottom: -10%;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.section-4 {
+  background-image: url(/images/section-4-background-images.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 0rem 0rem 5rem 0rem;
+
+  .chickkek {
+    position: absolute;
+    top: 30%;
+    left: 0;
+  }
+
+  .formu-text {
+    margin: 5rem;
+    margin-top: 10rem;
+    padding: 2rem;
+
+    h2 {
+      font-size: $font-size-two;
+      font-family: $font-family-first;
+    }
+    h4 {
+      font-size: $font-size-up;
+      font-family: $font-family-two;
+    }
+    span {
+      background-color: $three-color;
+      color: $background-color;
+      font-size: $font-size-up;
+      font-family: $font-family-two;
+      padding: 1rem;
+      justify-content: space-around;
+    }
+  }
+
+  .formu-contacts {
+    background-color: $background-color;
+    @include flex(center, center, column);
+    z-index: 10;
+    padding-bottom: 20rem;
+    position: relative;
+    border-radius: 15px;
+
+    .form {
+      margin-top: 5rem;
+
+      .alisa {
+        display: flex;
+        z-index: 3;
+        position: relative;
+
+        input {
+          background-color: $background-color-1;
+          width: 100%;
+          padding: 2rem 2rem 2rem 5rem;
+          margin-bottom: 3rem;
+          margin-left: 1rem;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+          border-radius: 10px;
+
+          @extend .input;
+
+          cursor: pointer;
+          box-shadow: 0px 0px 10px rgba(38, 149, 42, 0.5);
+        }
+        img {
+          position: absolute;
+          top: 25%;
+          left: 5%;
+        }
+      }
+      .alisa-1 {
+        display: flex;
+        position: relative;
+        margin-top: 1rem;
+
+        input {
+          background-color: $background-color-1;
+          width: 100%;
+          padding: 2rem 2rem 2rem 5rem;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+          border-radius: 10px;
+          margin-left: 1rem;
+          @extend .input;
+          cursor: pointer;
+        }
+        img {
+          position: absolute;
+          top: 35%;
+          left: 5%;
+          margin-right: 1rem;
+        }
+      }
+      .red-btn {
+        width: 100%;
+        font-family: $font-family-two;
+        font-size: $font-size-three;
+        background-color: $three-color;
+        margin-top: 5rem;
+        @extend .buttonn;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-radius: 2rem;
+        color: $background-color;
+        cursor: pointer;
+      }
+      .check {
+        margin-bottom: 5rem;
+
+        input {
+          width: 2rem;
+          height: 2rem;
+          @extend .chheck;
+        }
+        h5 {
+          margin-left: 1rem;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+        }
+        span {
+          color: $primery-color-2;
+        }
+      }
+    }
+  }
+  .formu-contacts::after {
+    content: "";
+    position: absolute;
+    background-color: $background-color;
+    width: 100%;
+    height: 0.2rem;
+    bottom: 0;
+    z-index: -3;
+    transform: skewY(-6deg);
+    box-shadow: 0.3rem 1rem 1rem rgb(63, 61, 61);
+    border-radius: 15px;
+  }
+}

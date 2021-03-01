@@ -1,0 +1,701 @@
+.section-5 {
+  margin-top: 15rem;
+  z-index: 3;
+  margin-bottom: 10rem;
+  background-image: url(/images/Jony-background-images.png);
+  background-position: end;
+  background-size: cover;
+  position: relative;
+  background-repeat: no-repeat;
+
+  .shoh-2 {
+    position: absolute;
+    top: 20%;
+    right: 0%;
+  }
+  .barg-3 {
+    position: absolute;
+    top: 70%;
+    left: -3%;
+  }
+  .barg-4 {
+    position: absolute;
+    bottom: -10%;
+    left: 5%;
+  }
+
+  .kompany {
+    h3 {
+      font-size: $font-size-five;
+      font-family: $font-family-first;
+      letter-spacing: 0.2rem;
+      font-weight: 900;
+    }
+    .strelka-img {
+      cursor: pointer;
+    }
+  }
+
+  .lini {
+    width: 100%;
+    height: 1rem;
+    background-color: $colorr;
+    position: relative;
+    margin-top: 10rem;
+
+    .lin {
+      position: absolute;
+      top: -500%;
+      h3 {
+        position: relative;
+      }
+      span {
+        position: absolute;
+        top: 215%;
+        right: 25%;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 100%;
+        background-color: $colorr;
+      }
+    }
+  }
+
+  .h4 {
+    width: 50%;
+    margin: auto;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding: 3rem;
+    background-color: $background-color-2;
+    z-index: 3;
+    position: relative;
+    border-radius: 1rem;
+
+    h4 {
+      font-size: $font-size-four;
+      font-family: $font-family-first;
+      letter-spacing: 0.2rem;
+      font-weight: 600;
+    }
+
+    span {
+      display: flex;
+      color: $color;
+      font-size: $font-size-three;
+      font-family: $font-family-two;
+    }
+  }
+
+  .h4::before {
+    content: "";
+    position: absolute;
+    border-right: 2rem solid transparent;
+    border-bottom: 2rem solid $background-color-2;
+    border-top: 2rem solid transparent;
+    top: 0;
+    left: 5rem;
+    transform: translateY(-100%);
+  }
+
+  /* section-6*/
+
+  h2 {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: $font-size-five;
+    font-family: $font-family-first;
+  }
+
+  .slider {
+    align-items: center;
+  }
+
+  .offis {
+    margin-bottom: 10rem;
+    background-color: $color-2;
+    padding: 2rem;
+    border-radius: 2rem;
+    box-shadow: 0px 50px 80px -30px rgba(0, 0, 0, 0.1),
+      inset 0px -5px 0px rgba(0, 0, 0, 0.05);
+
+    .jony-text {
+      @include flex(space-around, center, column);
+
+      h3 {
+        text-align: center;
+        margin-bottom: 5rem;
+        width: 85%;
+        font-family: $font-family-two;
+        font-size: $font-size-three;
+
+        span {
+          color: $primery-color-2;
+          font-size: $font-size-up;
+        }
+      }
+      .blue-btn {
+        padding: 2rem;
+        width: 80%;
+        border-radius: 1rem;
+        background-color: $primery-color-3;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+        cursor: pointer;
+        @extend .bluee-btn;
+
+        img {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+
+  .addres {
+    background-color: $background-color-2;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: -10rem;
+    margin-top: 10rem;
+    margin-left: 10rem;
+
+    .add {
+      padding: 2rem;
+      border: 2px dashed $background-color-1;
+      border-radius: 1rem;
+
+      background-color: $color-2;
+
+      h3 {
+        width: 85%;
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-left: 5rem;
+        font-size: $font-size-up;
+
+        span {
+          color: $primery-color;
+        }
+      }
+
+      .alisa {
+        display: flex;
+        z-index: 3;
+        position: relative;
+
+        input {
+          background-color: $background-color-1;
+          padding: 2rem 2rem 2rem 5rem;
+          margin: 30px;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+          border-radius: 10px;
+          @extend .input;
+          cursor: pointer;
+          box-shadow: 0px 0px 10px rgba(38, 149, 42, 0.5);
+        }
+        img {
+          position: absolute;
+          top: 42%;
+          left: 12%;
+        }
+      }
+      .alisa-1 {
+        display: flex;
+        position: relative;
+
+        input {
+          background-color: $background-color-1;
+          padding: 2rem 2rem 2rem 5rem;
+          margin: 30px;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+          border-radius: 10px;
+          margin-left: 1rem;
+          @extend .input;
+          cursor: pointer;
+        }
+        img {
+          position: absolute;
+          top: 42%;
+          left: 5%;
+          margin-right: 1rem;
+        }
+      }
+      .red-btn {
+        font-family: $font-family-two;
+        font-size: $font-size-three;
+        background-color: $three-color;
+        @extend .buttonn;
+        margin: 30px 30px 30px 0;
+        padding: 1rem 2rem;
+        text-align: center;
+        border-radius: 2rem;
+        color: $background-color;
+        cursor: pointer;
+      }
+      .check {
+        margin-left: 3rem;
+        margin-top: 2rem;
+
+        input {
+          width: 2rem;
+          height: 2rem;
+          @extend .chheck;
+        }
+        h5 {
+          margin-left: 1rem;
+          font-size: $font-size-three;
+          font-family: $font-family-two;
+        }
+        span {
+          color: $primery-color-2;
+        }
+      }
+    }
+  }
+  .formu-contacts::after {
+    content: "";
+    position: absolute;
+    background-color: $background-color;
+    width: 100%;
+    height: 0.2rem;
+    bottom: 0;
+    z-index: -3;
+    transform: skewY(-6deg);
+    box-shadow: 0.3rem 1rem 1rem rgb(63, 61, 61);
+    border-radius: 15px;
+  }
+}
+
+.section-7 {
+  position: relative;
+  margin-bottom: 10rem;
+
+  .open-text {
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+  }
+
+  .dashet {
+    margin: 10rem 0 0 10rem;
+  }
+
+  .chat-images {
+    position: relative;
+    margin-left: 10rem;
+    margin-bottom: 15rem;
+  }
+  .chats {
+    position: absolute;
+    top: 12%;
+    .chat-1 {
+      width: 27%;
+      margin-right: 5rem;
+
+      h3 {
+        width: 54%;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+    }
+    .chat-2 {
+      margin-left: 5rem;
+
+      h3 {
+        width: 54%;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+      img {
+        margin-left: 5rem;
+      }
+    }
+    .chat-3 {
+      width: 50%;
+
+      h3 {
+        width: 54%;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+      img {
+        margin-left: 4rem;
+      }
+    }
+  }
+
+  .chatss {
+    position: absolute;
+    left: 15%;
+    bottom: -44%;
+
+    .chat-4 {
+      width: 27%;
+
+      h3 {
+        width: 54%;
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+    }
+    .chat-5 {
+      h3 {
+        text-align: center;
+        margin-top: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+        margin-left: 55px;
+      }
+      img {
+        margin-left: 5rem;
+      }
+    }
+    .chat-6 {
+      width: 30%;
+      margin-left: 5rem;
+
+      h3 {
+        text-align: center;
+        margin-top: 1rem;
+        margin-left: 10rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+      img {
+        margin-left: 15rem;
+      }
+    }
+  }
+}
+
+.section-8 {
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  padding-bottom: 10rem;
+  background: $background-color-2;
+  h2 {
+    margin-top: 5rem;
+    font-size: $font-size-five;
+    font-family: $font-family-first;
+  }
+
+  .vapros {
+    background-color: $color-2;
+    padding: 2rem;
+    border-radius: 1rem;
+    position: relative;
+    display: flex;
+
+    &.change {
+      display: block;
+
+      .story {
+        display: none;
+      }
+
+      .x {
+        transform: rotate(0deg);
+      }
+    }
+
+    h3 {
+      font-size: 20px;
+      font-family: $font-family-first;
+    }
+    p {
+      font-size: $font-size-firist;
+      font-family: $font-family-two;
+    }
+
+    .x {
+      width: 3rem;
+      min-width: 3rem;
+      height: 3rem;
+      position: relative;
+      z-index: 2;
+      cursor: pointer;
+      transform: rotate(45deg);
+      transition: transform 1s;
+
+      .x-1 {
+        top: 50%;
+        position: absolute;
+        width: 100%;
+        height: 0.1rem;
+        transform: translateY(-50%);
+        background-color: $color-3;
+      }
+
+      .x-2 {
+        right: 50%;
+        position: absolute;
+        width: 0.1rem;
+        height: 100%;
+        background-color: $color-3;
+      }
+    }
+  }
+}
+
+.section-9 {
+  margin-bottom: 10rem;
+  h2 {
+    text-align: center;
+    font-size: $font-size-five;
+    font-family: $font-family-first;
+    margin-bottom: 2rem;
+    color: $primery-color;
+  }
+  p {
+    width: 70%;
+    margin-left: 15rem;
+    font-size: $font-size-up;
+    font-family: $font-family-two;
+    text-align: center;
+  }
+
+  textarea {
+    margin-top: 5rem;
+    background: $colorr;
+    border-radius: 1rem;
+    height: 70%;
+    width: 100%;
+    resize: none;
+  }
+
+  ::placeholder {
+    padding: 3rem;
+    font-size: $font-size-up;
+    font-family: $font-family-two;
+  }
+  .form {
+    margin-top: 5rem;
+
+    .alisa {
+      display: flex;
+      // z-index: 3;
+      position: relative;
+
+      input {
+        background-color: $colorr;
+        width: 100%;
+        padding: 2rem 2rem 2rem 5rem;
+        margin-bottom: 3rem;
+        margin-left: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+        border-radius: 10px;
+
+        @extend .input;
+
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(38, 149, 42, 0.5);
+      }
+      img {
+        position: absolute;
+        top: 25%;
+        left: 5%;
+      }
+    }
+    .alisa-1 {
+      display: flex;
+      position: relative;
+      margin-top: 1rem;
+
+      input {
+        background-color: $colorr;
+        width: 100%;
+        padding: 2rem 2rem 2rem 5rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+        border-radius: 10px;
+        margin-left: 1rem;
+        @extend .input;
+        cursor: pointer;
+      }
+      img {
+        position: absolute;
+        top: 35%;
+        left: 5%;
+        margin-right: 1rem;
+      }
+    }
+    .red-btn {
+      width: 100%;
+      font-family: $font-family-two;
+      font-size: $font-size-three;
+      background-color: $three-color;
+      margin-top: 5rem;
+      @extend .buttonn;
+      padding: 1rem 2rem;
+      text-align: center;
+      border-radius: 2rem;
+      color: $background-color;
+      cursor: pointer;
+    }
+    .check {
+      margin-bottom: 5rem;
+
+      input {
+        width: 2rem;
+        height: 2rem;
+        @extend .chheck;
+      }
+      h5 {
+        margin-left: 1rem;
+        font-size: $font-size-three;
+        font-family: $font-family-two;
+      }
+      span {
+        color: $primery-color-2;
+      }
+    }
+  }
+}
+
+footer {
+  background-color: #f8f7f3;
+  background-image: url(/images/map.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  .container,
+  .row {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .barg-1 {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+  }
+  .barg-2 {
+    left: 50%;
+    top: 85%;
+    position: absolute;
+  }
+
+  img {
+    position: absolute;
+    top: 35%;
+    right: 10%;
+  }
+}
+
+.footer-addres {
+  padding: 5rem;
+  padding-bottom: 10rem;
+  background: #f8f7f3;
+  box-shadow: 0 0 60px 50px #f8f7f3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10000px;
+    background: #f8f7f3;
+    right: 100%;
+  }
+
+  .number {
+    margin-bottom: 10rem;
+    font-size: $font-size-four;
+    font-family: $font-family-two;
+
+    a {
+      font-size: $font-size-up;
+      font-family: $font-family-two;
+      color: $color;
+      text-align: center;
+      margin-right: 5rem;
+      padding-right: 5rem;
+    }
+
+    h4 {
+      font-size: $font-size-four;
+      font-family: $font-family-two;
+      color: $primery-color;
+    }
+    h5 {
+      font-family: $font-family-first;
+      font-size: $font-size-up;
+    }
+  }
+
+  .social-list {
+    font-size: $font-size-up;
+
+    a {
+      border-radius: 100%;
+      background-color: $background-color-1;
+      color: $color-2;
+      width: 50px;
+      height: 50px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $primery-color;
+        text-decoration: none;
+      }
+
+      i {
+        padding: 1rem;
+      }
+    }
+  }
+}
+
+.copyright {
+  background-color: $primery-color;
+  padding: 2rem;
+  position: relative;
+
+  .copyrights {
+    h2 {
+      color: $color-2;
+      font-size: $font-size-up;
+      font-family: $font-family-first;
+      margin-right: 10rem;
+      margin-top: 1rem;
+    }
+    p {
+      font-size: $font-size-four;
+      font-family: $font-family-two;
+      color: $color-2;
+      text-align: center;
+      align-items: center;
+      font-weight: 500;
+      margin-top: 1rem;
+      letter-spacing: 2px;
+    }
+  }
+
+  img {
+    position: absolute;
+    top: -105%;
+    right: 0;
+  }
+}

@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  // scroll-behavior: smooth;
+}
+.section-1 {
+  background-image: url(/images/section-1-background-images.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 20rem;
+
+  .container {
+    max-width: 1450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .list {
+    margin-left: 5rem;
+    margin-top: 1rem;
+    @include flex(center, center, row);
+    @extend .lisl;
+
+    .lis {
+      margin-left: 3rem;
+      list-style: none;
+    }
+    .link {
+      color: $color;
+      font-family: $font-family-two;
+      font-size: $font-size-three;
+      font-style: normal;
+      @extend .lisl;
+    }
+  }
+  .linguis {
+    width: 8rem;
+    @include flex(center, center, column);
+    background-color: $background-color;
+    border-radius: 1rem;
+    padding: 0.5rem 0;
+
+    i {
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+    .btn-lingus {
+      display: block;
+      font-size: 1.5rem;
+      a {
+        color: black;
+      }
+    }
+
+    .btn-lingus.test {
+      display: none;
+      margin-top: 5px;
+    }
+  }
+  .call {
+    padding: 1rem 1.3rem;
+    border-radius: 2rem;
+    background-color: $background-color;
+
+    img {
+      margin-right: 1rem;
+      background-color: $three-color;
+      padding: 0.5rem;
+      border-radius: 50%;
+    }
+    a {
+      color: $color;
+      text-decoration: none;
+    }
+  }
+
+  .tree-1 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+  }
+  .tree-2 {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    margin-top: 3rem;
+    z-index: 3;
+  }
+
+  .barg-1 {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    z-index: 3;
+  }
+  .barg-2 {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+    z-index: 3;
+  }
+
+  .sec-1-img {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    z-index: 3;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  .shoh-1 {
+    position: absolute;
+    top: 15%;
+    left: 12%;
+    z-index: -1;
+    // transform: rotate(-300deg);
+  }
+
+  .cloud {
+    position: absolute;
+    z-index: 2;
+    padding: 2rem;
+    bottom: -10%;
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+.cards-wrapper {
+  background-color: $background-color;
+  margin-top: 7rem;
+  margin-left: 2rem;
+  border-radius: 2rem;
+
+  .cards {
+    margin: 1rem;
+    border: 1px dashed black;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+
+    .card {
+      padding: 2rem;
+      border: none;
+      background-color: $background-color-1;
+    }
+    .card img {
+      width: 25%;
+      height: 25%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: $font-size-three;
+      font-family: $font-family-two;
+      z-index: 3;
+    }
+    .card p {
+      font-size: $font-size-four;
+      font-family: $font-family-two;
+      color: $colorr;
+      z-index: 3;
+    }
+  }
+}
+
+.texts {
+  margin-top: 6rem;
+  margin-left: 5rem;
+  padding: 2rem;
+
+  h1 {
+    font-size: $font-size-two;
+    font-family: $font-family-first;
+  }
+  p {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: $font-size-three;
+    font-family: $font-family-two;
+  }
+  span {
+    color: $primery-color;
+  }
+  .green-btn {
+    font-family: $font-family-two;
+    font-size: $font-size-firist;
+    background-color: $primery-color;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    @extend .button;
+    cursor: pointer;
+    position: relative;
+    z-index: 5;
+  }
+  img {
+    margin-right: 1rem;
+  }
+}
+
+.section-2 {
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  position: relative;
+}
+.open-text {
+  z-index: 5;
+  @include flex(center, center, row);
+  margin: auto;
+
+  h2 {
+    margin: 0 5rem;
+    font-size: $font-size-five;
+    font-family: $font-family-first;
+  }
+}
+
+.our-product {
+  @include flex(center, center, row);
+  margin-top: 5rem;
+
+  .ours {
+    margin-top: 5rem;
+    background-color: $background-color-2;
+    margin: 5rem 2rem 0 2rem;
+    @include flex(center, center, column);
+    padding: 5rem 5rem;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: background-color 3s;
+    transition: border-top-left-radius, border-top-right-radius, 2s;
+
+    .ours-img {
+      width: 100%;
+      background-color: $background-color;
+      padding: 1rem;
+      border-radius: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      margin-top: 3rem;
+      position: relative;
+      font-family: $font-family-first;
+      font-size: $font-size-up;
+    }
+    h4 {
+      margin: 3rem auto;
+      font-size: $font-size-firist;
+      font-family: $font-family-two;
+      font-weight: 500;
+      text-align: center;
+      color: $color;
+    }
+    .green-btn {
+      font-family: $font-family-two;
+      font-size: $font-size-firist;
+      background-color: $primery-color-2;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      @extend .button;
+      cursor: pointer;
+    }
+  }
+  .ours:hover {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    transition: border-top-right-radius, border-top-left-radius, 2s,
+      background-color 3s;
+    background-color: $color-push;
+  }
+
+  .ourss {
+    margin-top: 5rem;
+    background-color: $background-color-2;
+    margin: 5rem 2rem 0 2rem;
+    @include flex(center, center, column);
+    padding: 5rem 5rem;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    border-bottom-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: background-color 3s;
+    transition: border-top-left-radius, border-top-right-radius, 2s;
+
+    .ours-img {
+      width: 100%;
+      background-color: $background-color;
+      padding: 1rem;
+      border-radius: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    h2 {
+      margin-top: 3rem;
+      position: relative;
+      font-family: $font-family-first;
+      font-size: $font-size-up;
+    }
+    h4 {
+      margin: 3rem auto;
+      font-size: $font-size-firist;
+      font-family: $font-family-two;
+      font-weight: 500;
+      text-align: center;
+      color: $color;
+    }
+    .green-btn {
+      font-family: $font-family-two;
+      font-size: $font-size-firist;
+      background-color: $primery-color-2;
+      padding: 1rem 2rem;
+      border-radius: 2rem;
+      @extend .button;
+      cursor: pointer;
+    }
+  }
+  .ourss:hover {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    transition: border-top-right-radius, border-top-left-radius, 2s,
+      background-color 3s;
+    background-color: $color-push;
+  }
+}

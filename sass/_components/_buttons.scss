@@ -1,0 +1,66 @@
+.butt:focus:hover {
+  background-color: $three-color;
+  color: $background-color;
+}
+
+.but:focus:hover {
+  background-color: $background-color;
+  color: $color;
+  border: none;
+}
+
+.button {
+  color: #fff;
+  background: radial-gradient(63.48% 100% at 50% 0%, #55d35a 0%, #259529 100%);
+}
+
+.button:hover {
+  background-color: rgba(85, 211, 90, 1);
+  color: $background-color;
+}
+.button:hover:focus {
+  background-color: rgba(37, 149, 41, 1);
+  color: $color;
+}
+
+.buttonn:hover {
+  background-color: rgba(248, 118, 67, 1);
+  color: $background-color;
+}
+.buttonn:hover:focus {
+  background-color: rgba(240, 76, 37, 1);
+  color: $background-color;
+}
+
+.input:hover::placeholder {
+  color: $color;
+}
+.input {
+  border: 3px solid transparent;
+  transition: 0.2s all;
+}
+.input:hover {
+  border: 3px solid $primery-color-2;
+}
+.input:focus {
+  outline: none;
+  border: 3px solid transparent;
+}
+
+.chheck:focus {
+  border: 1px solid $primery-color-2;
+  color: $primery-color-2;
+  background-color: $primery-color;
+}
+
+.bluee-btn:hover {
+  background-color: rgba(37, 147, 203, 1);
+}
+
+.bluee-btn:focus {
+  background-color: rgba(55, 173, 233, 1);
+}
+
+.lisl:hover {
+  text-decoration: none;
+}
